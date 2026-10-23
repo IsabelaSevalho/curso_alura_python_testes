@@ -10,12 +10,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+#O OBJETIVO DE MOCKAR AQUI SERIA SIMULAR ESSA CONEXÃO NO BANCO:
 #Cria a conexão com o banco de dados MongoDB
-
 client = MongoClient(os.getenv("MONGO_URI"))
 
 # Seleciona o banco de dados
 db = client["burguer_app_db"]
+
+
 
 """função para retornar a instância do Banco de Dados"""
 def get_db():
